@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS chapter 38 to 48</title>
+<style>
+a{
+text-decoration: none;
+}
+.main {
+        padding: 50px;
+      }
+
+      .card {
+        padding: 30px;
+        display: inline-block;
+        text-align: center;
+cursor: pointer;
+      }
+
+      img {
+        height: 180px;
+        padding: 30px;
+        border: 3px solid rgb(148, 194, 236);
+        box-shadow: 2px solid rgb(16, 16, 77);
+      }
+p:hover{
+color: crimson;
+}
+   
+p{
+color:rgb(148, 194, 236) ;
+}
+
+</style>
+
+
+
+</head>
+<body>
+
+<!-- Chapter Events -->
+
+<!-- Q no 1 -->
+
+<a href="#" onclick="showAlert()">click me</a>
+
+
+
+<!-- Q no 2 -->
+
+<div class="main">
+    <h1 style="color: rgb(148, 194, 236);">Mobile Phone Lookup</h1>
+    <div class="card">
+      <img
+        src="m3.jpg"
+        alt="i phone 12 pro"
+        onclick="showAlert()"
+      />
+      <p>iPhone 12 pro</p>
+    </div>
+    <div class="card">
+      <img
+        src="m5.jpg"
+        alt="Samsung S20"
+        onclick="showAlert()"
+      />
+      <p>Samsung S20</p>
+    </div>
+    <div class="card">
+      <img
+        src="m2.jpg"
+        alt="huwai"
+        onclick="showAlert()"
+      />
+      <p>Huwai Y9 prime</p>
+    </div>
+    <div class="card">
+      <img
+        src="m4.jpg"
+        alt="Realme 9"
+        onclick="showAlert()"
+      />
+      <p>Realme 9</p>
+    </div>
+  </div>
+
+
+
+
+<!-- Q no 3 -->
+
+ <div class="main">
+    <table id="myTable">
+      <tr>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Class</th>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>Jhone</td>
+        <td>10</td>
+        <td>
+          <button onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Doe</td>
+        <td>9</td>
+        <td>
+          <button onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Mark</td>
+        <td>10</td>
+        <td>
+          <button onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>James</td>
+        <td>8</td>
+        <td>
+          <button onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Jack</td>
+        <td>10</td>
+        <td>
+          <button onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Daisy</td>
+        <td>9</td>
+        <td>
+          <button onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>peter</td>
+        <td>10</td>
+        <td>
+          <button onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>charles</td>
+        <td>8</td>
+        <td>
+          <button onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>zack</td>
+        <td>10</td>
+        <td>
+          <button onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>David</td>
+        <td>9</td>
+        <td>
+          <button onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+
+
+<!-- Q no 4 -->
+
+ <img id="img"
+ src="offbulb.jpg" alt="bulb"
+  onmouseover="mouseover()" onmouseout="mouseout()">
+
+
+
+<!-- Q no 5 -->
+
+
+<div class="main">
+    <h1>Counter</h1>
+    <h1 id="counter">0</h1>
+    <div>
+      <button onclick="countIncrease()">Increase</button>
+      <button onclick="countDecrease()">Decrease</button>
+    </div>
+  </div>
+
+
+
+
+  
+
+    <script src="app.js"></script>
+</body>
+</html>
